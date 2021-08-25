@@ -2,4 +2,4 @@ env.py
 .ipynb_checkpoints/
 __pycache__/
 telco_churn.csv
-	
+*.csv	
