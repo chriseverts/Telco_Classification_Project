@@ -111,8 +111,6 @@ def telco_churn_split(df):
 
 
 def prep_telco_churn(df):
-    #cleaning and splitting our data
-    df = clean_telco_churn(df)
     train, validate, test = telco_churn_split(df)
     return train, validate, test
 
@@ -141,6 +139,3 @@ def get_metrics_binary(clf):
     The True Positive Rate is {tpr:.3}, The False Positive Rate is {fpr:.3},
     The True Negative Rate is {tnr:.3}, and the False Negative Rate is {fnr:.3}
     ''')
-    return class_report
-
-
