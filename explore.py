@@ -48,7 +48,7 @@ def countplot(df):
 def get_churn_heatmap(df):
     '''returns a beautiful heatmap with correlations'''
     plt.figure(figsize=(8,12))
-    churn_heatmap = sns.heatmap(df.corr()[['churn']].sort_values(by='churn', ascending=False), vmin=-.5, vmax=.5, annot=True,cmap='flare')
+    churn_heatmap = sns.heatmap(df.corr()[['churn']].sort_values(by='churn', ascending=False), vmin=-.5, vmax=.5, annot=True,cmap='coolwarm')
     churn_heatmap.set_title('Features Correlated with Churn')
     
     return churn_heatmap
