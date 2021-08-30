@@ -32,7 +32,7 @@ def clean_telco_churn(df):
     '''cleans our telco churn data for us, and makes dummies'''
     #df.replace('', np.nan, regex = True)
     #is.na.sum()
-    #total_charges had 11 null values. I changed them into a float, and filled nulls with the mean of all total charges.
+    #total_charges had 1 null values. I changed them into a float, and filled nulls with the mean of all total charges.
     df.total_charges = pd.to_numeric(df.total_charges, errors='coerce').astype('float64')
     df.total_charges = df.total_charges.fillna(value=df.total_charges.mean()).astype('float64')
     df.replace('No internet service', 'No', inplace=True)
