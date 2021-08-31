@@ -31,6 +31,49 @@ Target audience for my notebook walkthrough is the Codeup Data Science team.
 5.) a notebook walkthrough presentation with a high-level overview of your project (5 minutes max). You should be prepared to answer follow-up questions about your code, process, tests, model, and findings.
 
 
+### Initial Hypothesis
+
+1.) Hypotheses 1:
+    
+        Ho: Monthly contracts are indpendent of churn
+
+        Ha: Monthly contracts are not dependent of churn
+        
+2.) Hypotheses 2:
+        
+        Ho: People who have fiber optic are independent of churn
+
+        Ha: People who have fiber optic are dependent on churn
+
+3.) Hypotheses 3:
+
+        Ho: People who pay with electronic check are inpendent of churn
+
+        Ha: People who pay with electronic check are dependent on churn
+
+
+### Executive Summary
+
+The following features were found to be main forces of churn
+
+    Month to month contract
+
+    Fiber optic
+
+    Electronic Check
+
+    Tenure
+
+I chose the decision tree due to the following
+
+    Baseline: 73%
+
+    Recall Rate: 93%
+
+    Accuracy: 80%
+
+
+
 ### Data Dictionary
 
 
@@ -97,10 +140,8 @@ tenure = customer tenure in months
 
 
 
-
-
-
 ## Pipeline Stages Breakdown
+
 
 ### Plan 
 
@@ -180,9 +221,25 @@ Summarize my conclusions, provide clear answers to my specific questions, and su
 -Walk Codeup Data Science Team through the analysis I did to answer my questions and that lead to my findings. 
 
 
+# Reproduce My Project
 
+You will need your own env file with database credentials along with all the necessary files listed below to run my final project notebook.
 
+Read this README.md Download the aquire.py, prepare.py, explore.py, and telco_churn_final.ipynb files into your working directory Add your own env file to your directory. (user, password, host) Run the Telco_Final_Notebook.ipynb notebook
 
+# Summary
+
+## Key Takeaways
+
+- Features that predict churn are Month to month contracts, fiber optic, and electronic payment
+
+- I chose decision tree as my model due to the fact that it had a recall percent of 93% and accuracy score of 79.9%
+
+## Recommendations
+
+- Obtain more data and run more models on various features that affect churns
+
+- This will allow us to use surgical precision on those who could possibly churn
 
 
 
